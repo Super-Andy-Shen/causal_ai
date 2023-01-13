@@ -1,0 +1,23 @@
+import numpy as np
+import pandas as pd
+list1 = [1,2,3,4]
+array1 = np.array(list1)
+print(array1)
+list2 = [[1,2,3],[4,5,6]]
+array2 = np.array(list2)
+print(array2)
+toyPrices = np.array([5,8,3,6])
+print(toyPrices - 2)
+ages = np.array([13,25,19])
+series1 = pd.Series(ages)
+print(series1)
+ages = np.array([13,25,19])
+series1 = pd.Series(ages,index=['Emma', 'Swetha', 'Serajh'])
+print(series1)
+dataf = pd.DataFrame([
+    ['John Smith','123 Main St',34],
+    ['Jane Doe', '456 Maple Ave',28],
+    ['Joe Schmo', '789 Broadway',51]
+    ],
+    columns=['name','address','age'])
+print(dataf)
